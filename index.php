@@ -1,5 +1,3 @@
 <?php
-
-echo "This is my first php file";
-
+        echo "Welcome to taco Blogs";
 ?>
