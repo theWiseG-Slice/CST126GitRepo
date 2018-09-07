@@ -5,7 +5,7 @@
  * Date: 9/7/2018
  * Time: 2:22 AM
  */
-require_once("Service.php");
+require_once("index.php");
 
 $uname = $_GET['uname'];
 $pword = $_GET['pword'];
