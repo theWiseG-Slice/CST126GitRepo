@@ -1,7 +1,15 @@
 <?php
-        echo "Welcome to taco Blogs";
-	echo date('m/d/Y h:i:s a');
-	echo "Kevin added a date and is showing that I can push to Heroku";
+        echo "Welcome to Taco Blogs";
+		$servername = "localhost";
+		$username = "root";
+		$passowrd = "root";
+		$tacoDB = "try1";
+
+		$conn = new mysqli($servername,$username,$passowrd,$tacoDB);
+		if($conn -> connect_error){
+			die("Connection Failed: " . $conn->connect_error);
+		}
+
 ?>
 	<form role="form" method="post" action="" autocomplete="off">
 
