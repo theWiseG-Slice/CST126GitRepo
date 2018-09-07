@@ -5,7 +5,12 @@
         $Email = 'jdoe@email.com';
         $Pword = 'Password';
 
-		@ $db = new mysqli('localhost','root','root','try1');
+        $host = 'localhost';
+        $username = 'root';
+        $password = 'root';
+        $database = 'myblog';
+
+		@ $db = new mysqli_connect($this->host, $this->username,$this->password,$this->database);
 
 		if(mysqli_connect_errno())
         {
