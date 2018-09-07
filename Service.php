@@ -1,10 +1,13 @@
+<!--
+Taco Blogs V 2.0
+Service Class V 1.0
+Programmers Roland, Kevin, Josh, Chuong
+9/7/2018
+Description:
+     PHP class that runs all the mysql backend involving in writing to the database and fetching loin info from the database
+Resources: PHP and MySQL web Development, www.w3schools.com
+-->
 <?php
-/**
- * Created by PhpStorm.
- * User: Alyssa
- * Date: 9/6/2018
- * Time: 5:54 PM
- */
 
 class Service{
 
