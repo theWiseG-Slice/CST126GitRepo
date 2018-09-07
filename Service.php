@@ -11,10 +11,10 @@ Resources: PHP and MySQL web Development, www.w3schools.com
 
 class Service{
 
-    private  $host = 'localhost';
-    private  $username = 'root';
-    private  $password = 'root';
-    private  $database = 'try1';
+    private  $host = 'us-cdbr-iron-east-01.cleardb.net';
+    private  $username = 'b808da256c0eda';
+    private  $password = '6a7d3dc1';
+    private  $database = 'heroku_97591c0989c66a5';
 
     function login($username, $password){
         $connection = mysqli_connect($this->host, $this->username,$this->password,$this->database);
