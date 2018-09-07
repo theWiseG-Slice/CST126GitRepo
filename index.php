@@ -15,7 +15,7 @@ class Service{
 
     function login($username, $password){
         $connection = mysqli_connect($this->host, $this->username,$this->password,$this->database);
-        $sql = "SELECT * FROM users WHERE username = '$username' and password = '$password'";
+        $sql = "SELECT * FROM users WHERE username = '$username' and pword = '$password'";
         $result = mysqli_query($connection,$sql);
         if($result) {
             $count = $result->num_rows;
@@ -31,7 +31,7 @@ class Service{
     function register($uname,$pword,$firstname,$lastname,$email)
     {
         $connection = mysqli_connect($this->host, $this->username,$this->password,$this->database);
-        $sql = "INSERT INTO users (username,password,firstname,lastname,email) VALUES ('$uname','$pword','$firstname','$lastname','$email')";
+        $sql = "INSERT INTO users (username,pword,firstname,lastname,email) VALUES ('$uname','$pword','$firstname','$lastname','$email')";
         $result = $connection->query($sql) or die(mysqli_error($connection));
         return true;
     }
