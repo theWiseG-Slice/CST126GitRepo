@@ -1,14 +1,20 @@
 <?php
         echo "Welcome to Taco Blogs";
-		$servername = "localhost";
-		$username = "root";
-		$passowrd = "root";
-		$tacoDB = "try1";
+        $FirstName = 'JOHN';
+        $LastName = 'DOE';
+        $Email = 'jdoe@email.com';
+        $Pword = 'Password';
 
-		$conn = new mysqli($servername,$username,$passowrd,$tacoDB);
-		if($conn -> connect_error){
-			die("Connection Failed: " . $conn->connect_error);
-		}
+		@ $db = new mysqli('localhost','root','root','try1');
+
+		if(mysqli_connect_errno())
+        {
+         echo 'Error: Could not connect to database.';
+         exit;
+        }
+        $query = "INSERT INTO userinfo VALUES
+                        ('".$FirstName."','".$LastName."','".$Email."','".$Pword."')";
+
 
 ?>
 <!DOCTYPE html>
