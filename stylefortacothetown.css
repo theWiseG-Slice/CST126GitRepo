@@ -21,7 +21,8 @@ body, html
 	color:#ffffff;
 	padding: 16px;
 	transition:0.25s;
-	text-decoration:none;
+	text-decoration:underline;
+	border-radius: 4px;
 }
 
 .lightLink a:hover
@@ -37,6 +38,13 @@ body, html
 	padding: 16px;
 	transition:0.25s;
 	text-decoration:none;
+}
+
+.darkLink a:hover
+{
+	background-color: #283334;
+	padding: 16px;
+	color: #f2f2f2;
 }
 
 button
