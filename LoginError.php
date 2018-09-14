@@ -8,7 +8,7 @@ Description:
 Resources: PHP and MySQL web Development, www.w3schools.com
 -->
 <?php
-echo "Login Error.";
+echo "Username or Password is incorrect, please try again.";
 ?>
 <html>
 <a href="Login.html">Try again</a>
