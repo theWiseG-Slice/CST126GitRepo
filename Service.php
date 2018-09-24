@@ -35,9 +35,7 @@ class Service{
     {
         $connection = mysqli_connect($this->host, $this->username,$this->password,$this->database);
         $sql = "INSERT INTO users (username,pword,firstname,lastname,email) VALUES ('$uname','$pword','$firstname','$lastname','$email')";
-        if($connection->query($sql)==true))
-             return true;
-         else
-             return false;
+        $result = $connection->query($sql) or die(mysqli_error($connection));
+        return true;
     }
 }
