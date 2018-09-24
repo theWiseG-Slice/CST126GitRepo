@@ -7,7 +7,7 @@ Description:
      Anouncment stating that the registration resulted in an error
 Resources: PHP and MySQL web Development, www.w3schools.com
 --><?php
-echo 'register error';
+echo 'register error. Username is exists. Try different username';
 ?>
 <html>
 Try again
