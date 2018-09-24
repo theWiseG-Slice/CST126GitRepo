@@ -11,5 +11,5 @@ echo 'register error';
 ?>
 <html>
 Try again
-<a href="Registration.html">Login</a>
+<a href="index.html">Login</a>
 </html>
