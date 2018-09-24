@@ -11,5 +11,5 @@ echo 'register error. Username is exists. Try different username';
 ?>
 <html>
 Try again
-<a href="index.html">Login</a>
+<a href="index.html">Register</a>
 </html>
