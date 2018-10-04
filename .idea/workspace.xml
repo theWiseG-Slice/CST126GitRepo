@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f26a6e2-2bce-4c39-9ddc-d601d8e8f192" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/CST126GitRepo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CST126GitRepo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginError.php" beforeDir="false" afterPath="$PROJECT_DIR$/LoginError.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginSuccess.php" beforeDir="false" afterPath="$PROJECT_DIR$/LoginSuccess.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegisterSuccess.php" beforeDir="false" afterPath="$PROJECT_DIR$/RegisterSuccess.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,36 +21,37 @@
     <session id="1159817902">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Procfile" value="2" />
-          <entry key="html" value="2" />
-          <entry key="php" value="15" />
+          <entry key="html" value="6" />
+          <entry key="php" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="2" />
-          <entry key="PHP" value="15" />
+          <entry key="HTML" value="6" />
+          <entry key="PHP" value="24" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="792" />
+          <entry key="php" value="1192" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="PHP" value="778" />
+          <entry key="PHP" value="1178" />
           <entry key="SQL" value="13" />
         </counts>
       </usages-collector>
@@ -56,53 +60,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Service.php">
+        <entry file="file://$USER_HOME$/Downloads/MyBlog/MyBlog/Service.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            <state relative-caret-position="374">
+              <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+        <entry file="file://$USER_HOME$/Downloads/MyBlog/MyBlog/Login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="86" column="75" lean-forward="true" selection-start-line="86" selection-start-column="75" selection-end-line="86" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LoginSuccess.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LoginResult.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
+            <state relative-caret-position="102">
+              <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LoginError.php">
+        <entry file="file://$USER_HOME$/Downloads/MyBlog/MyBlog/LoginSuccess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="89">
+              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login.html">
+        <entry file="file://$USER_HOME$/Downloads/MyBlog/MyBlog/LoginResult.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -116,6 +101,8 @@
       <list>
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/LoginError.php" />
+        <option value="$PROJECT_DIR$/RegisterSuccess.php" />
+        <option value="$PROJECT_DIR$/LoginSuccess.php" />
       </list>
     </option>
   </component>
@@ -142,7 +129,7 @@
           <expand>
             <path>
               <item name="CST126GitRepo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="C:\Users\germa\Downloads\MyBlog\MyBlog" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -153,7 +140,7 @@
           <expand>
             <path>
               <item name="CST126GitRepo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CST126GitRepo" type="462c0819:PsiDirectoryNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -166,6 +153,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\Documents\Programming\PHP\TacoBlogs\CST126GitRepo" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -195,17 +187,18 @@
       <workItem from="1536710354651" duration="876000" />
       <workItem from="1536712785715" duration="660000" />
       <workItem from="1536882667516" duration="1354000" />
+      <workItem from="1538525161503" duration="723000" />
+      <workItem from="1538686136653" duration="1009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10506000" />
+    <option name="totallyTimeSpent" value="12238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13313162" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19288956" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -247,11 +240,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_MyBlog.zip/MyBlog/RegisterError.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_MyBlog.zip/MyBlog/RegisterResult.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_MyBlog.zip/MyBlog/Service.php" />
     <entry file="file://$PROJECT_DIR$/index.php" />
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/RegisterResult.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -262,40 +251,84 @@
     <entry file="file://$PROJECT_DIR$/RegisterError.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/RegisterSuccess.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Service.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="86" column="75" lean-forward="true" selection-start-line="86" selection-start-column="75" selection-end-line="86" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoginSuccess.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoginResult.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LoginError.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoginResult.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Service.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_MyBlog.zip/MyBlog/Service.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PostContentSuccess.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PostContentResult.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoginSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="22" selection-start-column="13" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RegisterSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="72" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/MyBlog/MyBlog/Service.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/MyBlog/MyBlog/Login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/MyBlog/MyBlog/LoginResult.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/MyBlog/MyBlog/LoginSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
         </state>
       </provider>
     </entry>

@@ -1,71 +1,70 @@
-<!--
-Taco Blogs V 2.0
-Login Page V 1.0
-Programmers Roland, Kevin, Josh, Chuong
-9/7/2018
-Description:
-     Login page houses all the html for the webpage and the form and references all the necessary
-     php files.
-Resources: PHP and MySQL web Development, www.w3schools.com
--->
 
 <!DOCTYPE html>
-<html lang ="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title> Taco Blog</title>
-		<link rel="stylesheet" href="stylefortacothetown.css">
-	</head>
-	<body>
-		<section class="section">
-			<h2>
-				Login Form
-			</h2>
-		</section>
-		<section class="section">
-			<form action="LoginResult.php" method="GET">
-			<div class="container">
-        		<label>
-					<b>
-						Username
-					</b>
-				</label>
-			</div>
-			<div class="container">
-				<input type="text" placeholder="Enter Username" name="uname" required>
-			</div>
-			<div class="container">
-				<label>
-					<b>
-						Password
-					</b>
-				</label>
-			</div>
-			<div class="container">
-	        	<input type="password" placeholder="Enter Password" name="pword" required>
-			</div>
-			<div class="container">
-    	    	<button type="submit">
-					Login
-				</button>
-	    	</div>
-			</form>
-		</section>
-		<section class="section">
-			<p class="lightLink">
-				<a href="index.html">
-					Register
-				</a>
-			</p>
-		</section>
-		<section class="section">
-			<h2 style="font-size:10px;">
-				2018 © Big Taco Mind Control and Expensive Tacos Corporation |  All rights reserved.
-			</h2>
-		</section>
-	</body>
+<?php
+    session_start();
+}
+?>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        form {border: 3px solid #f1f1f1;}
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<h2>Login Form</h2>
+
+<form action="LoginResult.php" method="GET">
+
+    <div class="container">
+        <label><b>User name</b></label>
+        <input type="text" placeholder="Enter first name" name="uname" required>
+        <label><b>Password</b></label>
+        <input type="text" placeholder="Enter first name" name="pword" required>
+        <input type="submit" name="submit" >
+    </div>
+
+
+</form>
+
+
+<a href="Registration.html">Register</a>
+
+</body>
 </html>
-
-
