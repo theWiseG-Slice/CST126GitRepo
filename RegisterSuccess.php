@@ -1,11 +1,14 @@
+<!--
+Taco Blogs V 2.0
+Register Success V 1.0
+Programmers Roland, Kevin, Josh, Chuong
+9/7/2018
+Description:
+    Anouncemnet stating registration sucessfull
+Resources: PHP and MySQL web Development, www.w3schools.com
+-->
 <?php
-/**
- * Created by PhpStorm.
- * User: Alyssa
- * Date: 9/7/2018
- * Time: 9:55 AM
- */
-echo 'Register Success';
+echo 'Registeration Successful';
 ?>
 <html>
 Login

@@ -1,11 +1,14 @@
+<!--
+Taco Blogs V 2.0
+Login Error Page V 1.0
+Programmers Roland, Kevin, Josh, Chuong
+9/7/2018
+Description:
+     Page is displayed when you fail to log in properly
+Resources: PHP and MySQL web Development, www.w3schools.com
+-->
 <?php
-/**
- * Created by PhpStorm.
- * User: Alyssa
- * Date: 9/7/2018
- * Time: 2:26 AM
- */
-echo "Login Error.";
+echo "Username or Password is incorrect, please try again.";
 ?>
 <html>
 <a href="Login.html">Try again</a>
