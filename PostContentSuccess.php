@@ -71,9 +71,14 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                 <div id="post">
                     <tr>
                         <?php
-                        echo $row['title'];
+                        echo "User: " . $row['username'];
+                        echo ": "; ?>
+                        <b>
+                        <?echo $row['title'];?>
+                        </b>
+                        <?php
                         echo "<br/>";
-                        echo $row['username'] . ": " . $row['content']; //these are the fields that you have stored in your database table employee
+                        echo $row['content'];
                         echo "<br />";
                         ?>
                     </tr>
