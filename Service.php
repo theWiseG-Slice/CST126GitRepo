@@ -42,4 +42,14 @@ class Service{
          else
               return false;
     }
+     function insertPost($usersession, $title, $content)
+    {
+        $connection = mysqli_connect($this->host, $this->username,$this->password,$this->database);
+        $sql = "INSERT INTO content(username, title, content) VALUES('$usersession', '$title','$content')";
+        if($connection->query($sql) ==true)
+            return true;
+        else
+            return false;
+
+    }
 }
