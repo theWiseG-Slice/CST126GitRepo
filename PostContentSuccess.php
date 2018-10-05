@@ -34,8 +34,8 @@ $_SESSION['uname'];
                 <div class="status-upload">
                     <form action="PostContentResult.php">
                         <input type="hidden" name="uname" value="<?php echo $_SESSION['uname']; ?>">
-                        <textarea1 placeholder="Add Title" name="title" ></textarea1>
-                        <textarea placeholder="Add Content" name="content"></textarea>
+                        <textarea placeholder="Add Title" name="title" ></textarea>
+                        <textarea1 placeholder="Add Content" name="content"></textarea1>
 
                         <button type="submit" class="btn btn-success green"><i class="fa fa-share"></i>Add Post</button>
                     </form>
