@@ -12,7 +12,7 @@ $title = $_GET['title'];
 $_SESSION['uname'] = $username;
 
 $user = new Service();
-if($user->insertPost($username,$content, $title)==true){
+if($user->insertPost($username,$title, $content)==true){
 
     include("PostContentSuccess.php");
 }
