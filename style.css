@@ -70,15 +70,6 @@ body .no-padding {
     width: 100%;
 }
 .status-upload form textarea1 {
-    background: none repeat scroll 0 0 #fff;
-    border: medium none;
-    -webkit-border-radius: 4px 4px 0 0;
-    -moz-border-radius: 4px 4px 0 0;
-    -ms-border-radius: 4px 4px 0 0;
-    -o-border-radius: 4px 4px 0 0;
-    border-radius: 4px 4px 0 0;
-    color: #777777;
-    float: left;
     font-family: Lato;
     font-size: 14px;
     height: 20px;
