@@ -15,7 +15,7 @@ $uname = $_GET['uname'];
 $pword = $_GET['pword'];
 $user = new Service();
 if($user->login($uname, $pword)){
-    include("LoginSuccess.php");
+    include("PostContentSuccess.php");
 }
 else{
     include ("LoginError.php");
