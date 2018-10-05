@@ -69,17 +69,7 @@ body .no-padding {
     float: left;
     width: 100%;
 }
-.status-upload form textarea1 {
-    font-family: Lato;
-    font-size: 14px;
-    height: 20px;
-    letter-spacing: 0.3px;
-    padding: 20px;
-    width: 100%;
-    resize:vertical;
-    outline:none;
-    border: 1px solid #F2F2F2;
-}
+
 .status-upload form textarea {
     background: none repeat scroll 0 0 #fff;
     border: medium none;
