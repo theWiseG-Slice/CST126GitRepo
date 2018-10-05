@@ -1,6 +1,6 @@
 <!--
-Taco Blogs V 2.0
-Login Result Script V 1.0
+Taco Blogs V 3.0
+Login Result Script V 2.0
 Programmers Roland, Kevin, Josh, Chuong
 9/7/2018
 Description:
@@ -13,6 +13,7 @@ require_once("Service.php");
 
 $uname = $_GET['uname'];
 $pword = $_GET['pword'];
+$_SESSION['uname'] = $uname;
 $user = new Service();
 if($user->login($uname, $pword)){
     include("PostContentSuccess.php");
