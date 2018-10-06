@@ -1,5 +1,4 @@
 <?php
-$_SESSION['uname'];
 ?>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -33,7 +32,7 @@ $_SESSION['uname'];
             <div class="widget-area no-padding blank">
                 <div class="status-upload">
                     <form action="PostContentResult.php">
-                        <input type="hidden" name="uname" value="<?php echo $_SESSION['uname']; ?>">
+                        <input type="hidden" name="uname" value="<?php if(isset($_SESSION)) {echo $_SESSION['uname'];} ?>">
                         <input text type="text" placeholder="Add Title" name="title">
                         <textarea placeholder="Add Content" name="content"></textarea>
 
