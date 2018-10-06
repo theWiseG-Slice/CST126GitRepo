@@ -32,7 +32,7 @@
             <div class="widget-area no-padding blank">
                 <div class="status-upload">
                     <form action="PostContentResult.php">
-                        <input type="hidden" name="uname" value="<?php if(isset($_SESSION)) {echo $_SESSION['uname'];} ?>">
+                        <input type="hidden" name="uname" value="<?php if(isset($_SESSION)) {echo $_SESSION['uname'];}  ?>">
                         <input text type="text" placeholder="Add Title" name="title">
                         <textarea placeholder="Add Content" name="content"></textarea>
 
