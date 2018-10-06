@@ -16,14 +16,12 @@ if($username == '')
 {
     include ("Login.html");
 }
-else
-{
-if($user->insertPost($username,$title, $content)==true){
+else {
+    if ($user->insertPost($username, $content, $title) == true) {
 
-    include("PostContentSuccess.php");
-}
-else{
+        include("PostContentSuccess.php");
+    } else {
 
-    include ("PostContentError.php");
-}
+        include("PostContentError.php");
+    }
 }
