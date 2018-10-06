@@ -56,7 +56,7 @@ if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 #$result = mysqli_query($connection, "SELECT * FROM content");
-$result = mysqli_query($connection, "SELECT * from content ORDER BY 'postnumber' DESC");
+$result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber DESC");
 ?>
 <div class="container">
     <div class="row">
