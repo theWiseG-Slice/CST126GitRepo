@@ -14,7 +14,7 @@ $_SESSION['uname'] = $username;
 $user = new Service();
 if($username == '')
 {
-    include ("PostContentError.php");
+    include ("RequireLogin.php");
 }
 else {
     if ($user->insertPost($username, $content, $title) == true) {
