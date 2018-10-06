@@ -12,6 +12,12 @@ $title = $_GET['title'];
 $_SESSION['uname'] = $username;
 
 $user = new Service();
+if($username == '')
+{
+    include ("Login.html");
+}
+else
+{
 if($user->insertPost($username,$title, $content)==true){
 
     include("PostContentSuccess.php");
@@ -19,4 +25,5 @@ if($user->insertPost($username,$title, $content)==true){
 else{
 
     include ("PostContentError.php");
+}
 }
