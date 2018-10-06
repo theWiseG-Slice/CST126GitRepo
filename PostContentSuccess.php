@@ -34,7 +34,7 @@ $_SESSION['uname'];
                 <div class="status-upload">
                     <form action="PostContentResult.php">
                         <input type="hidden" name="uname" value="<?php echo $_SESSION['uname']; ?>">
-                        <textarea placeholder="Add Title" name="title" ></textarea>
+                        <text type="text" placeholder="Add Title" name="title">
                         <textarea placeholder="Add Content" name="content"></textarea>
 
                         <button type="submit" class="btn btn-success green"><i class="fa fa-share"></i>Add Post</button>
@@ -74,7 +74,7 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY 'postnumber'
                         echo "User: " . $row['username'];
                         echo ": "; ?>
                         <b>
-                        <?echo $row['title'];?>
+                        <?php echo "Title: ".$row['title'];?>
                         </b>
                         <?php
                         echo "<br/>";
