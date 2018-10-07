@@ -17,7 +17,7 @@ if($username == '')
     include ("RequireLogin.php");
 }
 else {
-    if ($user->insertPost($username, $content, $title) == true) {
+    if ($user->insertPost($username, $title, $content) == true) {
 
         include("PostContentSuccess.php");
     } else {
