@@ -23,4 +23,5 @@ else {
     } else {
 
         include("PostContentError.php");
-x}
+    }
+}
