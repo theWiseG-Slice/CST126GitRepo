@@ -69,18 +69,16 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
             <div id="header">
                 <div id="post">
                     <tr>
-                        <?php
-                        echo "User: " . $row['username'];
-                        echo ": "; ?>
                         <b>
-                            <br/>
-                        <?php echo "Title: ".$row['title'];
-                              echo "  TimeStamp: ".$row['datetime'];?>
+                        <?php echo "Title: ".$row['title'];?>
                         </b>
                         <?php
                         echo "<br/>";
                         echo $row['content'];
                         echo "<br />";
+                        echo "Post by: " . $row['username'];
+                        echo "<br />";
+                        echo "Date: ".$row['datetime'];
                         ?>
                     </tr>
                 </div>
