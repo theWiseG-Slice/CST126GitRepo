@@ -73,7 +73,9 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
                         echo "User: " . $row['username'];
                         echo ": "; ?>
                         <b>
-                        <?php echo "Title: ".$row['title'];?>
+                            <br/>
+                        <?php echo "Title: ".$row['title'];
+                              echo "  TimeStamp: ".$row['datetime'];?>
                         </b>
                         <?php
                         echo "<br/>";
