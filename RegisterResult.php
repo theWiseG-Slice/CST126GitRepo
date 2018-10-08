@@ -1,5 +1,5 @@
 <!--
-Taco Blogs V 2.0
+Taco Blogs V 3.0
 Registration Result Script V 1.0
 Programmers Roland, Kevin, Josh, Chuong
 9/7/2018

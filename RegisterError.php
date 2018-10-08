@@ -1,5 +1,5 @@
 <!--
-Taco Blogs V 2.0
+Taco Blogs V 3.0
 Login Page V 1.0
 Programmers Roland, Kevin, Josh, Chuong
 9/7/2018
