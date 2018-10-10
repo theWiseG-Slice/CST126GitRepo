@@ -88,7 +88,7 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
                                 echo "<br />";
                                 echo "Date: ".$row['datetime'];
                                 ?>
-                         
+
                 </div>
             </div>
         </div>
