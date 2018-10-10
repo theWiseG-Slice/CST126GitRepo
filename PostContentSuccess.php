@@ -66,7 +66,7 @@ if (mysqli_connect_errno()) {
 #$result = mysqli_query($connection, "SELECT * FROM content");
 $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber DESC");
 ?>
-<div class="container" style="padding: 10px">
+<div class="container">
     <div class="row">
         <h3>Previous Posts</h3>
     </div>
@@ -76,19 +76,17 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
         <div id="wrapper">
             <div id="header">
                 <div id="post">
-
-                                <b>
-                                <?php echo "Title: ".$row['title'];?>
-                                </b>
-                                <?php
-                                echo "<br/>";
-                                echo $row['content'];
-                                echo "<br />";
-                                echo "Post by: " . $row['username'];
-                                echo "<br />";
-                                echo "Date: ".$row['datetime'];
-                                ?>
-
+                      <b>
+                      <?php echo "Title: ".$row['title'];?>
+                      </b>
+                      <?php
+                      echo "<br/>";
+                      echo $row['content'];
+                      echo "<br />";
+                      echo "Post by: " . $row['username'];
+                      echo "<br />";
+                      echo "Date: ".$row['datetime'];
+                      ?>
                 </div>
             </div>
         </div>
