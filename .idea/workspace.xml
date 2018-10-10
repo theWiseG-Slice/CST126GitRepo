@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8f26a6e2-2bce-4c39-9ddc-d601d8e8f192" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/PostContentSuccess.php" beforeDir="false" afterPath="$PROJECT_DIR$/PostContentSuccess.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,14 +47,14 @@
         <counts>
           <entry key="css" value="168" />
           <entry key="html" value="3" />
-          <entry key="php" value="1234" />
+          <entry key="php" value="1248" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="168" />
           <entry key="HTML" value="4" />
-          <entry key="PHP" value="1220" />
+          <entry key="PHP" value="1234" />
           <entry key="SQL" value="13" />
         </counts>
       </usages-collector>
@@ -75,8 +74,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PostContentSuccess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="78" column="37" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+            <state relative-caret-position="106">
+              <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -210,12 +212,12 @@
       <workItem from="1538702049072" duration="2233000" />
       <workItem from="1538892384601" duration="1699000" />
       <workItem from="1538966652916" duration="384000" />
-      <workItem from="1539129851545" duration="1776000" />
+      <workItem from="1539129851545" duration="2008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18813000" />
+    <option name="totallyTimeSpent" value="19045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -375,8 +377,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PostContentSuccess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="78" column="37" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+        <state relative-caret-position="106">
+          <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
