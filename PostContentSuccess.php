@@ -76,7 +76,7 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
         <div id="wrapper">
             <div id="header">
                 <div id="post">
-                    <tr>
+                    <tr class = "post">
                         <b>
                         <?php echo "Title: ".$row['title'];?>
                         </b>

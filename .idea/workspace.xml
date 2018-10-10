@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f26a6e2-2bce-4c39-9ddc-d601d8e8f192" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/PostContentSuccess.php" beforeDir="false" afterPath="$PROJECT_DIR$/PostContentSuccess.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,16 +46,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="126" />
+          <entry key="css" value="168" />
           <entry key="html" value="3" />
-          <entry key="php" value="1208" />
+          <entry key="php" value="1234" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="126" />
+          <entry key="CSS" value="168" />
           <entry key="HTML" value="4" />
-          <entry key="PHP" value="1194" />
+          <entry key="PHP" value="1220" />
           <entry key="SQL" value="13" />
         </counts>
       </usages-collector>
@@ -71,20 +72,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PostContentSuccess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="84" column="45" lean-forward="true" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="45" />
+            <state relative-caret-position="276">
+              <caret line="78" column="37" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+            <state relative-caret-position="306">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -124,8 +125,8 @@
         <option value="$PROJECT_DIR$/RequireLogin.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Login.html" />
-        <option value="$PROJECT_DIR$/PostContentSuccess.php" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/PostContentSuccess.php" />
       </list>
     </option>
   </component>
@@ -209,12 +210,12 @@
       <workItem from="1538702049072" duration="2233000" />
       <workItem from="1538892384601" duration="1699000" />
       <workItem from="1538966652916" duration="384000" />
-      <workItem from="1539129851545" duration="1534000" />
+      <workItem from="1539129851545" duration="1776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18571000" />
+    <option name="totallyTimeSpent" value="18813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -365,17 +366,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PostContentSuccess.php">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="84" column="45" lean-forward="true" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="45" />
+        <state relative-caret-position="306">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/PostContentSuccess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        <state relative-caret-position="276">
+          <caret line="78" column="37" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
         </state>
       </provider>
     </entry>
