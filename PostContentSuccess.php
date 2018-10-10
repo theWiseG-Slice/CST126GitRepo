@@ -76,9 +76,7 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
         <div id="wrapper">
             <div id="header">
                 <div id="post">
-                    <table cellpadding="10">
-                        <tr>
-                            <td>
+
                                 <b>
                                 <?php echo "Title: ".$row['title'];?>
                                 </b>
@@ -90,9 +88,7 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
                                 echo "<br />";
                                 echo "Date: ".$row['datetime'];
                                 ?>
-                            </td>
-                        </tr>
-                    </table>
+                         
                 </div>
             </div>
         </div>
