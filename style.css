@@ -20,7 +20,8 @@ container
 #header {
     background-color: #cccccc;
     height: 80px;
-    width:  110%;
+    width:  100%;
+    padding: 10px;
     margin-bottom: 10px;
 }
 .post {
