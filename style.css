@@ -82,13 +82,13 @@ body .no-padding {
     -ms-border-radius: 4px 4px 0 0;
     -o-border-radius: 4px 4px 0 0;
     border-radius: 4px 4px 0 0;
-    color: #777777;
+    color: #000000;
     float: left;
     font-family: Lato;
     font-size: 14px;
-    height: 142px;
+    height: 100px;
     letter-spacing: 0.3px;
-    padding: 20px;
+    padding: 2px;
     width: 100%;
     resize:vertical;
     outline:none;
