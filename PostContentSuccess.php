@@ -94,7 +94,8 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
     }
     mysqli_close($connection);
     ?>
-    <a href="Login.html"><h3>Login page</h3></a>          <a href="index.html"><h3>Registration page</h3></a>
+    <a href="Login.html"><h3>Login page</h3></a><a href="index.html"><h3>Registration page</h3></a>
+
 </div>
 
 
