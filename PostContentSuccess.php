@@ -21,7 +21,7 @@ Resources: PHP and MySQL web Development
     <title>Taco's Blog</title>
     <link type="text/css" rel="stylesheet" href="style.css"/>
 </head>
-<div <!--id="wrapper"--> >
+<div id="wrapper" >
     <div <!--id="header"--> >
         <div <!--id="post"--> >
             <h2>Taco's Blog Page</h2>
