@@ -75,11 +75,12 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
         ?>
         <div id="wrapper">
             <div id="header">
+                <b>
+                    <?php echo "Title: ".$row['title'];?>
+                </b>
                 <div id="post">
                     <tr>
-                        <b>
-                        <?php echo "Title: ".$row['title'];?>
-                        </b>
+
                         <?php
                         echo "<br/>";
                         echo $row['content'];
