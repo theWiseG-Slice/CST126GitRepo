@@ -23,7 +23,7 @@ Resources: PHP and MySQL web Development
 </head>
 <div id="wrapper" >
     <div id="header" >
-        <div <!--id="post"--> >
+        <div id="post">
             <h2>Taco's Blog Page</h2>
         </div>
     </div>
