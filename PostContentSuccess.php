@@ -76,21 +76,23 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
         <div id="wrapper">
             <div id="header">
                 <div id="post">
-                    <tr>
-                        <td style = "padding: 10px">
-                            <b>
-                            <?php echo "Title: ".$row['title'];?>
-                            </b>
-                            <?php
-                            echo "<br/>";
-                            echo $row['content'];
-                            echo "<br />";
-                            echo "Post by: " . $row['username'];
-                            echo "<br />";
-                            echo "Date: ".$row['datetime'];
-                            ?>
-                        </td>
-                    </tr>
+                    <table cellpadding="10">
+                        <tr>
+                            <td>
+                                <b>
+                                <?php echo "Title: ".$row['title'];?>
+                                </b>
+                                <?php
+                                echo "<br/>";
+                                echo $row['content'];
+                                echo "<br />";
+                                echo "Post by: " . $row['username'];
+                                echo "<br />";
+                                echo "Date: ".$row['datetime'];
+                                ?>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
