@@ -20,12 +20,11 @@ container
 #header {
     background-color: #cccccc;
     height: 80px;
-    width:  110%;
+    width:  100%;
     margin-bottom: 10px;
 }
 .post {
     backgrounf-color:#ffffff;
-    padding: 15px;
     border: 5px solid #000000;
     margin-bottom: 5px;
 }
