@@ -30,28 +30,23 @@ Resources: PHP and MySQL web Development
 	</h2>
 </div>
 
-<div class="container">
-    <div class="row">
-        <h3>Add New Post</h3>
-    </div>
-
-    <div class="row">
-        <div class="col-md-6">
-            <div class="widget-area no-padding blank">
-                <div class="status-upload">
-                    <form action="PostContentResult.php">
-                        <input type="hidden" name="uname" value="<?php if(isset($_SESSION)) {echo $_SESSION['uname'];}  ?>">
-                        <input text type="text" placeholder="Add Title" name="title">
-                        <textarea placeholder="Add Content" name="content"></textarea>
-
-                        <button type="submit" class="btn btn-success green"><i class="fa fa-share"></i>Add Post</button>
-                    </form>
-                </div><!-- Status Upload  -->
-            </div><!-- Widget Area -->
-        </div>
-
-    </div>
-</div>
+<section class="section">
+	<form action="PostContentResult.php">
+		<input type="hidden" name="uname" value="<?php if(isset($_SESSION)) {echo $_SESSION['uname'];}  ?>">
+		<div>
+			<input text type="text" placeholder="Add Title" name="title">
+		</div>
+		<div>
+			<textarea placeholder="Add Content" name="content">
+			</textarea>
+		</div>
+		<button type="submit" class="btn btn-success green">
+			<i class="fa fa-share">
+			</i>
+			Add Post
+		</button>
+	</form>
+</section>
 </html>
 <?php
     $host = 'us-cdbr-iron-east-01.cleardb.net';
