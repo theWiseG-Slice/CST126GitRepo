@@ -90,38 +90,6 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
     mysqli_close($connection);
     ?>
 </div>
-<section class="section">
-	<div clas="container">
-		<div class="row">
-        	<h3>
-				Previous Posts
-			</h3>
-			<?php
-    			while ($row = mysqli_fetch_array($result)) {
-        	?>
-		</div>
-		<div id="wrapper">
-            <div id="header">
-                <div id="post">
-                      <b>
-                      	<?php echo "Title: ".$row['title'];?>
-                      </b>
-                      	<?php
-                      		echo "<br/>";
-                      		echo $row['content'];
-                      		echo "<br />";
-                      		echo "Post by: " . $row['username'];
-	                      	echo "<br />";
-                      		echo "Date: ".$row['datetime'];
-                      ?>
-                </div>
-            </div>
-		</div>
-	</div>
-	}
-    mysqli_close($connection);
-    ?>
-</section>
 <section class = "section">
 	<h3 class = "lightLink">
 		<a href="Login.html">
