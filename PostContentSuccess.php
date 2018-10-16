@@ -61,6 +61,7 @@ if (mysqli_connect_errno()) {
 #$result = mysqli_query($connection, "SELECT * FROM content");
 $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber DESC");
 ?>
+<section class="section">
 <div class="container">
     <div class="row">
         <h3>Previous Posts</h3>
@@ -90,6 +91,7 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
     mysqli_close($connection);
     ?>
 </div>
+</section>
 <section class = "section">
 	<h3 class = "lightLink">
 		<a href="Login.html">
