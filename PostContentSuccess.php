@@ -89,8 +89,53 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
     }
     mysqli_close($connection);
     ?>
-    <a href="Login.html"><h3>Login page</h3></a><a href="index.html"><h3>Registration page</h3></a>
-
 </div>
+<section class="section">
+	<div clas="container">
+		<div class="row">
+        	<h3>
+				Previous Posts
+			</h3>
+			<?php
+    			while ($row = mysqli_fetch_array($result)) {
+        	?>
+		</div>
+		<div id="wrapper">
+            <div id="header">
+                <div id="post">
+                      <b>
+                      	<?php echo "Title: ".$row['title'];?>
+                      </b>
+                      	<?php
+                      		echo "<br/>";
+                      		echo $row['content'];
+                      		echo "<br />";
+                      		echo "Post by: " . $row['username'];
+	                      	echo "<br />";
+                      		echo "Date: ".$row['datetime'];
+                      ?>
+                </div>
+            </div>
+		</div>
+	</div>
+	}
+    mysqli_close($connection);
+    ?>
+</section>
+<section class = "section">
+	<h3 class = "lightLink">
+		<a href="Login.html">
+			Login
+		</a>
+		<a href="index.html">
+			Register
+		</a>
+	</h3>
+</section>
+<section class="section">
+	<h2 style="font-size:10px;">
+		2018 © Big Taco Mind Control & Expensive Tacos Corporation |  All rights reserved.
+	</h2>
+</section>
 
 
