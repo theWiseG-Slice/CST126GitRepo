@@ -18,16 +18,16 @@ Resources: PHP and MySQL web Development
 </script>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Taco's Blog</title>
     <link type="text/css" rel="stylesheet" href="style.css"/>
 </head>
-<div id="wrapper" >
-    <div id="header" >
-        <div id="post">
-            <h2>Taco's Blog Page</h2>
-        </div>
-    </div>
-
+<div class="picture_one">
+	<h2 class = "ptitle">
+		Taco's Blog Page
+	</h2>
 </div>
 
 <div class="container">
