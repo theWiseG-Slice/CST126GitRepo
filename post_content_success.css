@@ -23,15 +23,8 @@ container
     margin-bottom: auto;
 }
 #post {
-    background-color:#ffffff;
-    border: 5px solid #000000;
+    border: 5px solid #283334;
     margin-bottom: auto;
-}
-#bar
-{
-	background-color:blue;
-	width: 800px;
-	height 10px;
 }
 .picture_one
 {
