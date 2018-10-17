@@ -20,12 +20,12 @@ container
     background-color: #cccccc;
     height: 80px;
     width:  100%;
-    margin-bottom: 10px;
+    margin-bottom: auto;
 }
 .post {
     background-color:#ffffff;
     border: 5px solid #000000;
-    margin-bottom: 5px;
+    margin-bottom: auto;
 }
 .picture_one
 {
