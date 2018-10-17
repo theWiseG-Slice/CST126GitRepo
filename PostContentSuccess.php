@@ -67,29 +67,27 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
         <h3>Previous Posts</h3>
     </div>
     <?php
-    while ($row = mysqli_fetch_array($result)) {
-        ?>
-        <div id="wrapper">
-            <div id="header">
-                <div id="post">
-                      <b>
-                      <?php echo "Title: ".$row['title'];?>
-                      </b>
-                      
-					  <?php
-                      echo $row['content'];
-                      echo "<br />";
-                      echo "Post by: " . $row['username'];
-                      echo "<br />";
-                      echo "Date: ".$row['datetime'];
-                      ?>
-                </div>
-            </div>
-        </div>
+    	while ($row = mysqli_fetch_array($result)) 
+		{
+    		?>
+    		<div id="wrapper">
+				<div id="header">
+					<div id="post">
+						<b>
+							<?php echo "Title: ".$row['title'];?>
+						</b>
+						<?php echo $row['content']; ?>
+						<?php echo "<br />"; ?>
+						<?php echo "Post by: " . $row['username']; ?>
+						<?php echo "<br />"; ?>
+    					<?php echo "Date: ".$row['datetime']; ?>
+					</div>
+	            </div>
+    	    </div>
         <?php
-    }
-    mysqli_close($connection);
-    ?>
+    	}
+    	mysqli_close($connection);
+    	?>
 </div>
 </section>
 <section class = "section">
