@@ -22,12 +22,12 @@ container
 	width:  100%;
     margin-bottom: auto;
 }
-.post {
+#post {
     background-color:#ffffff;
     border: 5px solid #000000;
     margin-bottom: auto;
 }
-.bar
+#bar
 {
 	background-color:blue;
 	width: 800px;
