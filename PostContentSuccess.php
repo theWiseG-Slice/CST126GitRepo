@@ -80,8 +80,8 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
 						<?php echo $row['content']; ?>
 						<?php echo "<br />"; ?>
 						<?php echo "Post by: " . $row['username']; ?>
-						<?php echo "<br />"; ?>
-    					<?php echo "Date: ".$row['datetime']; ?>
+						|
+						<?php echo "Date: ".$row['datetime']; ?>
 					</div>
 	            </div>
     	    </div>
