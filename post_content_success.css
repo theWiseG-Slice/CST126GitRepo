@@ -25,7 +25,8 @@ container
 #post {
     border: 5px solid #283334;
     margin-bottom: auto;
-	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .picture_one
 {
