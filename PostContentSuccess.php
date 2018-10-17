@@ -21,7 +21,7 @@ Resources: PHP and MySQL web Development
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Taco's Blog</title>
+    <title>Taco Blog Chat</title>
     <link type="text/css" rel="stylesheet" href="post_content_success.css"/>
 </head>
 <div class="picture_one">
