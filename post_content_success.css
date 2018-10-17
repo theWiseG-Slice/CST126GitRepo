@@ -18,7 +18,7 @@ container
 }
 #header {
     background-color: #cccccc;
-    height: auto;
+    
     width:  100%;
     margin-bottom: auto;
 }
@@ -26,6 +26,7 @@ container
     background-color:#ffffff;
     border: 5px solid #000000;
     margin-bottom: auto;
+	height: auto;
 }
 .picture_one
 {
