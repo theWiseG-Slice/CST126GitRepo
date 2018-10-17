@@ -15,10 +15,11 @@ container
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+	height:auto;
 }
 #header {
     background-color: #cccccc;
-	height: 80px;
+	
     width:  100%;
     margin-bottom: auto;
 }
@@ -26,7 +27,6 @@ container
     background-color:#ffffff;
     border: 5px solid #000000;
     margin-bottom: auto;
-	height: auto;
 }
 .picture_one
 {
