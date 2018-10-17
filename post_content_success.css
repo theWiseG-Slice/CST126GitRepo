@@ -27,6 +27,12 @@ container
     border: 5px solid #000000;
     margin-bottom: auto;
 }
+.bar
+{
+	background-color:#283334;
+	width: 800px;
+	height 10px;
+}
 .picture_one
 {
 	position:relative;
