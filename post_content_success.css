@@ -24,6 +24,7 @@ container
 }
 #post {
     border: 5px solid #283334;
+	border-radius: 5px;
     margin-bottom: auto;
 	padding-left: 10px;
 	padding-right: 10px;
