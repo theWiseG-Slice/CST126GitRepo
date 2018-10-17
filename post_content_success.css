@@ -18,7 +18,7 @@ container
 }
 #header {
     background-color: #cccccc;
-    height: 80px;
+    height: auto;
     width:  100%;
     margin-bottom: auto;
 }
