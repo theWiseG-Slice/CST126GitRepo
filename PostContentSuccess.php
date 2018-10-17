@@ -26,7 +26,7 @@ Resources: PHP and MySQL web Development
 </head>
 <div class="picture_one">
 	<h2 class = "ptitle">
-		Taco's Blog Page
+		Taco Blog Home Page
 	</h2>
 </div>
 
