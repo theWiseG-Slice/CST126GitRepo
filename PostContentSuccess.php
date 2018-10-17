@@ -37,7 +37,7 @@ Resources: PHP and MySQL web Development
 			<input text type="text" placeholder="Add Title" name="title">
 		</div>
 		<div>
-			<textarea placeholder="Add Content" name="content">
+			<textarea placeholder="Add Content" name="content" style="height:80%;width:20%;">
 			</textarea>
 		</div>
 		<button type="submit" class="btn btn-success green">
