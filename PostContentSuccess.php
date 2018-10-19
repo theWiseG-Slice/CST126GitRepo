@@ -81,7 +81,7 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
 						<?php echo "<br />"; ?>
 						<?php echo "Post by: " . $row['username']; ?>
 						|
-						<?php echo "Date: ".$row['datetime']; ?>
+						<?php echo "Date: ".$row['datetime']." | GMT"; ?>
 					</div>
 	            </div>
     	    </div>
