@@ -99,6 +99,19 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
 		<a href="index.html">
 			Register
 		</a>
+        <?php
+        $currentUser = $_SESSION['uname'];
+        $check = mysqli_query($connection, "SELECT isAdmin from users where username = '$currentUser' ");
+        if($check)
+        {
+            ?>
+            <a href="ContentAdmin.php">
+                Admin
+            </a>
+            <?php
+        }
+
+        ?>
 	</h3>
 </section>
 <section class="section">
