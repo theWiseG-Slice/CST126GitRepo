@@ -36,10 +36,7 @@
             "class="btn btn-success green"><i class="fa fa-share"></i>Search </button>
         </form>
     </div>
-
-
-                      <h3>Add New Post</h3>
-  
+    <h3>Add New Post</h3>
             <div class="widget-area no-padding blank">
                 <div class="status-upload">
                     <form action="PostContentResult.php">
