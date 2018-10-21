@@ -88,11 +88,11 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                         ?>
                     </tr>
                 </div>           
-            <?php
+           
+        </div>
+         <?php
             echo "Tag: ";
             ?>
-        </div>
-        
             <?php
             $contentID = $row['contentID'];
             $result3 = mysqli_query($connection, "SELECT tagID FROM tags_content WHERE contentID = $contentID ");
