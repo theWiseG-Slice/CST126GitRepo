@@ -37,10 +37,9 @@
         </form>
     </div>
 
-<div class="container"> 
+
                       <h3>Add New Post</h3>
-    <div class="row">
-        <div class="col-md-6">
+  
             <div class="widget-area no-padding blank">
                 <div class="status-upload">
                     <form action="PostContentResult.php">
@@ -55,9 +54,7 @@
                 </div>
 
             </div>
-        </div>
-    </div>
-</div>
+ 
 </html>
 <?php
 $host = 'us-cdbr-iron-east-01.cleardb.net';
