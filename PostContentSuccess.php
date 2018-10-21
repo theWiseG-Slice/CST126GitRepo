@@ -67,6 +67,7 @@ $host = 'us-cdbr-iron-east-01.cleardb.net';
 $username = 'b808da256c0eda';
 $password = '6a7d3dc1';
 $database = 'heroku_97591c0989c66a5';
+$connection = mysqli_connect($host, $username, $password, $database);
 // Check connection
 if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -93,6 +94,7 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                         echo "<br/>";
                         echo $row['content']; //these are the fields that you have stored in your database table employee
                         echo "<br />";
+
                         ?>
                     </tr>
                 </div>
@@ -159,6 +161,5 @@ $result = mysqli_query($connection, "SELECT * FROM content");
     ?>
     <a href="Login.html"><h3>Login</h3></a>
 </div>
-
 
 
