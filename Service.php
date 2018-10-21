@@ -52,4 +52,38 @@ class Service{
             return false;
 
     }
+     function deletePost($contentID)
+    {
+        $connection = mysqli_connect($this->host, $this->username, $this->password, $this->database);
+        $sql = "DELETe FROM  content WHERE contentID = '$contentID'";
+        $sql1 = "DELETE FROM tags_content WHERE contentID = '$contentID'";
+        if($connection->query($sql) && $connection->query($sql1) )
+            return true;
+        else
+            return false;
+    }
+    function addTag($contentID,$tagName)
+    {
+        $connection = mysqli_connect($this->host, $this->username, $this->password, $this->database);
+        $result = mysqli_query($connection, "SELECT tagName FROM tags WHERE tagName='$tagName'");
+        if (mysqli_num_rows($result) == 0) {
+            $sql2 = "INSERT INTO tags (tagName) VALUES ('$tagName')";
+            $connection->query($sql2);
+        }
+        $tagID = mysqli_fetch_array(mysqli_query($connection, "SELECT tagID FROM tags WHERE tagName = '$tagName'"))[0];
+        $sql3="SELECT * FROM tags_content WHERE tagId = '$tagID'";
+        $result3 = mysqli_query($connection,$sql3);
+        if(mysqli_num_rows($result3) > 0)
+        {
+            while ($row = mysqli_fetch_array($result3)){
+                if($row['contentID']==$contentID)
+                    return false;
+            }
+        }
+        $sql1 = "INSERT INTO tags_content (tagID,contentID) VALUES ('$tagID','$contentID')";
+        if ($connection->query($sql1))
+            return true;
+        else
+            return false;
+    }
 }
