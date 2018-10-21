@@ -74,8 +74,7 @@ $result = mysqli_query($connection, "SELECT * FROM content");
     <?php
     while ($row = mysqli_fetch_array($result)) {
         ?>
-        <div id="wrapper">
-            <div id="header">
+        <div id="wrapper">           
                 <div id="post">
                     <tr>
                         <?php
@@ -88,13 +87,12 @@ $result = mysqli_query($connection, "SELECT * FROM content");
 
                         ?>
                     </tr>
-                </div>
-            </div>
+                </div>           
             <?php
             echo "Tag: ";
             ?>
         </div>
-        <div id="wrapper">
+        
             <?php
             $contentID = $row['contentID'];
             $result3 = mysqli_query($connection, "SELECT tagID FROM tags_content WHERE contentID = $contentID ");
@@ -115,8 +113,8 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                 }
             }
             ?>
-        </div>
-        <div id="wrapper">
+      
+      
             <tr>
                 <form action="AddTagResult.php">
                     <input type="hidden" name="contentID_tag" value="<?php echo $row['contentID']; ?>">
@@ -142,7 +140,7 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                     <input type="submit" value="Delete">
                 </form>
             </tr>
-        </div>
+       
         <?php
         echo "<br/>";
         echo "<br/>";
