@@ -29,7 +29,19 @@ Resources: PHP and MySQL web Development
 		Taco Blog Home Page
 	</h2>
 </div>
-
+<div id="wrapper">
+    <div id="post">
+        <h4>Search by Tag</h4>
+        <form action="SearchPostResult.php">
+            <input type="hidden" name="uname1" value="<?php if (isset($_SESSION)) {
+                echo $_SESSION['uname'];
+            } ?>">
+            <input type="text" placeholder="Tag" name="tag">
+            <button type="submit"
+            "class="btn btn-success green"><i class="fa fa-share"></i>Search </button>
+        </form>
+    </div>
+</div>
 <section class="section">
 	<form action="PostContentResult.php">
 		<input type="hidden" name="uname" value="<?php if(isset($_SESSION)) {echo $_SESSION['uname'];}  ?>">
@@ -85,6 +97,56 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
 					</div>
 	            </div>
     	    </div>
+						       <div id="wrapper">
+            <?php
+            $contentID = $row['contentID'];
+            $result3 = mysqli_query($connection, "SELECT tagID FROM tags_content WHERE contentID = $contentID ");
+            $num_rows = mysqli_num_rows($result3);
+            if ($num_rows > 0) {
+                while ($row3 = mysqli_fetch_array($result3)) {
+                    $tagID = $row3['tagID'];
+                    $result2 = mysqli_query($connection, "SELECT tagName FROM tags WHERE tagID = $tagID ");
+                    if ($result2->num_rows > 0) {
+                        while ($row2 = $result2->fetch_assoc()) {
+                            ?>
+                            <?php
+                            echo "" . $row2['tagName'] . ",";
+                            ?>
+                            <?php
+                        }
+                    }
+                }
+            }
+            ?>
+        </div>
+        <div id="wrapper">
+            <tr>
+                <form action="AddTagResult.php">
+                    <input type="hidden" name="contentID_tag" value="<?php echo $row['contentID']; ?>">
+                    <input type="hidden" name="username_tag" value="<?php echo $row['username']; ?>">
+                    <input type="hidden" name="username_session" value="<?php if (isset($_SESSION)) {
+                        echo $_SESSION['uname'];
+                    } ?>">
+                    <input type="text" placeholder="Add Tag" name="tagName">
+                    <input type="submit" value="Add Tag">
+                </form>
+
+
+            </tr>
+            <tr>
+                <form action="DeletePostResult.php">
+                    <input type="hidden" name="contentID_del" value="<?php echo $row['contentID']; ?>">
+                    <input type="hidden" name="title_del" value="<?php echo $row['title']; ?>">
+                    <input type="hidden" name="uname_del" value="<?php echo $row['username']; ?>">
+                    <input type="hidden" name="content_del" value="<?php echo $row['content']; ?>">
+                    <input type="hidden" name="uname_ses" value="<?php if (isset($_SESSION)) {
+                        echo $_SESSION['uname'];
+                    } ?>">
+                    <input type="submit" value="Delete">
+                </form>
+            </tr>
+        </div>
+
         <?php
     	}
     	mysqli_close($connection);
@@ -100,6 +162,7 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
 			Register
 		</a>
         <?php
+				    /*
         $currentUser = $_SESSION['uname'];
         $check = mysqli_query($connection, "SELECT isAdmin from users where username = '$currentUser' ");
         if($check)
@@ -110,6 +173,7 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
             </a>
             <?php
         }
+	*/
 
         ?>
 	</h3>
