@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<?php
+    session_start();
+?>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        form {border: 3px solid #f1f1f1;}
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Only user who's create this post is able to create tags for this post! Please Login again</h2>
+
+<form action="LoginResult.php" method="GET">
+
+    <div class="container">
+        <label><b>User name</b></label>
+        <input type="text" placeholder="Enter first name" name="uname" required>
+        <label><b>Password</b></label>
+        <input type="text" placeholder="Enter first name" name="pword" required>
+        <input type="submit" name="submit" >
+    </div>
+
+
+</form>
+
+
+<a href="Registration.html">Register</a>
+
+<a href="PostContentSuccess.php">See Post</a>
+</body>
+</html>
