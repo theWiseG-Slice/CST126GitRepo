@@ -1,16 +1,9 @@
-<!--
-Taco Blogs V 3.0
-Login Page V 1.0
-Programmers Roland, Kevin, Josh, Chuong
-10/7/2018
-Description:
-     display all posts in html
-Resources: PHP and MySQL web Development
 <?php
+
 ?>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script>
     $(document).ready(function () {
         $("[data-toggle=tooltip]").tooltip();
@@ -18,17 +11,18 @@ Resources: PHP and MySQL web Development
 </script>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Taco Blog Chat</title>
-    <link type="text/css" rel="stylesheet" href="post_content_success.css"/>
+    <title>Taco's Blog</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
 </head>
-<div class="picture_one">
-	<h2 class = "ptitle">
-		Taco Blog Home Page
-	</h2>
+<div id="wrapper">
+    <div id="header">
+        <div id="post">
+            <h2>Taco's Blog Page</h2>
+
+        </div>
+    </div>
 </div>
+
 <div id="wrapper">
     <div id="post">
         <h4>Search by Tag</h4>
@@ -42,62 +36,74 @@ Resources: PHP and MySQL web Development
         </form>
     </div>
 </div>
-<section class="section">
-	<form action="PostContentResult.php">
-		<input type="hidden" name="uname" value="<?php if(isset($_SESSION)) {echo $_SESSION['uname'];}  ?>">
-		<div>
-			<input text type="text" placeholder="Add Title" name="title">
-		</div>
-		<div>
-			<textarea placeholder="Add Content" name="content" style="height:20%;width:77%;">
-			</textarea>
-		</div>
-		<button type="submit" class="btn btn-success green">
-			<i class="fa fa-share">
-			</i>
-			Add Post
-		</button>
-	</form>
-</section>
+
+<div class="container">
+    <div class="row">
+        <h3>Add New Post</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="widget-area no-padding blank">
+                <div class="status-upload">
+                    <form action="PostContentResult.php">
+                        <input type="hidden" name="uname" value="<?php if (isset($_SESSION)) {
+                            echo $_SESSION['uname'];
+                        } ?>">
+                        <input type="text" placeholder="Add Title" name="title">
+                        <textarea placeholder="Add Content" name="content"></textarea>
+                        <button type="submit"
+                        "class="btn btn-success green"><i class="fa fa-share"></i>Add Post</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 </html>
 <?php
-    $host = 'us-cdbr-iron-east-01.cleardb.net';
-    $username = 'b808da256c0eda';
-    $password = '6a7d3dc1';
-    $database = 'heroku_97591c0989c66a5';
-$connection = mysqli_connect($host, $username, $password, $database);
+$host = 'localhost';
+$username = 'root';
+$password = 'root';
+$database = 'myblog';
+$connection = mysqli_connect($host, $username, $password, $database, 8889);
 // Check connection
 if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
-#$result = mysqli_query($connection, "SELECT * FROM content");
-$result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber DESC");
+$result = mysqli_query($connection, "SELECT * FROM content");
+
 ?>
-<section class="section">
+
 <div class="container">
     <div class="row">
         <h3>Previous Posts</h3>
     </div>
     <?php
-    	while ($row = mysqli_fetch_array($result)) 
-		{
-    		?>
-    		<div id="wrapper">
-				<div id="header">
-					<div id="post">
-						<b>
-							<?php echo "Title: ".$row['title'];?>
-						</b>
-						<?php echo "<br />"; ?>
-						<?php echo $row['content']; ?>
-						<?php echo "<br />"; ?>
-						<?php echo "Post by: " . $row['username']; ?>
-						|
-						<?php echo "Date: ".$row['datetime']." | GMT"; ?>
-					</div>
-	            </div>
-    	    </div>
-						       <div id="wrapper">
+    while ($row = mysqli_fetch_array($result)) {
+        ?>
+        <div id="wrapper">
+            <div id="header">
+                <div id="post">
+                    <tr>
+                        <?php
+                        echo "Post by: " . $row['username'];
+                        echo "<br/>";
+                        echo "Title: " . $row['title'];
+                        echo "<br/>";
+                        echo $row['content']; //these are the fields that you have stored in your database table employee
+                        echo "<br />";
+
+                        ?>
+                    </tr>
+                </div>
+            </div>
+            <?php
+            echo "Tag: ";
+            ?>
+        </div>
+        <div id="wrapper">
             <?php
             $contentID = $row['contentID'];
             $result3 = mysqli_query($connection, "SELECT tagID FROM tags_content WHERE contentID = $contentID ");
@@ -148,40 +154,13 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
         </div>
 
         <?php
-    	}
-    	mysqli_close($connection);
-    	?>
+        echo "<br/>";
+        echo "<br/>";
+    }
+    mysqli_close($connection);
+    ?>
+    <a href="Login.html"><h3>Login</h3></a>
 </div>
-</section>
-<section class = "section">
-	<h3 class = "lightLink">
-		<a href="Login.html">
-			Logout
-		</a>
-		<a href="index.html">
-			Register
-		</a>
-        <?php
-				    /*
-        $currentUser = $_SESSION['uname'];
-        $check = mysqli_query($connection, "SELECT isAdmin from users where username = '$currentUser' ");
-        if($check)
-        {
-            ?>
-            <a href="ContentAdmin.php">
-                Admin
-            </a>
-            <?php
-        }
-	*/
 
-        ?>
-	</h3>
-</section>
-<section class="section">
-	<h2 style="font-size:10px;">
-		2018 © Big Taco Mind Control & Expensive Tacos Corporation |  All rights reserved.
-	</h2>
-</section>
 
 
