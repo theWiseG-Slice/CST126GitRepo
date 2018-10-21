@@ -16,14 +16,11 @@
 </head>
 <div id="wrapper">
     <div id="header">
-        <div id="post">
+       
             <h2>Taco's Blog Page</h2>
-
-        </div>
+     
     </div>
 </div>
-
-<div id="wrapper">
     <div id="post">
         <h4>Search by Tag</h4>
         <?php
@@ -39,13 +36,9 @@
             "class="btn btn-success green"><i class="fa fa-share"></i>Search </button>
         </form>
     </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <h3>Add New Post</h3>
-    </div>
-
+<div class="container"> 
+                      <h3>Add New Post</h3>
     <div class="row">
         <div class="col-md-6">
             <div class="widget-area no-padding blank">
