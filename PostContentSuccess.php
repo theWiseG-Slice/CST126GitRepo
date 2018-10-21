@@ -63,11 +63,10 @@
 </div>
 </html>
 <?php
-$host = 'localhost';
-$username = 'root';
-$password = 'root';
-$database = 'myblog';
-$connection = mysqli_connect($host, $username, $password, $database, 8889);
+   $host = 'us-cdbr-iron-east-01.cleardb.net';
+    $username = 'b808da256c0eda';
+      $password = '6a7d3dc1';
+      $database = 'heroku_97591c0989c66a5';
 // Check connection
 if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
