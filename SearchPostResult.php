@@ -10,11 +10,11 @@
 $username = $_GET['uname1'];
 $tagName = $_GET['tag'];
 $_SESSION['uname'] = $username;
-$host = 'localhost';
-$username = 'root';
-$password = 'root';
-$database = 'myblog';
-$connection = mysqli_connect($host, $username, $password, $database, 8889);
+$host = 'us-cdbr-iron-east-01.cleardb.net';
+$username = 'b808da256c0eda';
+$password = '6a7d3dc1';
+$database = 'heroku_97591c0989c66a5';
+$connection = mysqli_connect($host, $username, $password, $database);
 $result = mysqli_query($connection, "SELECT tagID FROM tags WHERE tagName='$tagName'");
 if ($result->num_rows > 0) {
     $tagID = mysqli_fetch_array($result)['tagID'];
