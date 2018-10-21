@@ -152,7 +152,6 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                 </form>
             </tr>
         </div>
-
         <?php
         echo "<br/>";
         echo "<br/>";
