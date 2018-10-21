@@ -55,7 +55,7 @@ class Service{
      function deletePost($contentID)
     {
         $connection = mysqli_connect($this->host, $this->username, $this->password, $this->database);
-        $sql = "DELETe FROM  content WHERE contentID = '$contentID'";
+        $sql = "DELETE FROM  content WHERE contentID = '$contentID'";
         $sql1 = "DELETE FROM tags_content WHERE contentID = '$contentID'";
         if($connection->query($sql) && $connection->query($sql1) )
             return true;
