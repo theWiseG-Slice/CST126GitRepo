@@ -26,6 +26,10 @@
 <div id="wrapper">
     <div id="post">
         <h4>Search by Tag</h4>
+        <?php
+        if($_GET["value"]!=NULL)
+            $_SESSION["uname"] = $_GET["value"];
+            ?>
         <form action="SearchPostResult.php">
             <input type="hidden" name="uname1" value="<?php if (isset($_SESSION)) {
                 echo $_SESSION['uname'];
