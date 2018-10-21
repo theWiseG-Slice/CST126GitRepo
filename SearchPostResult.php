@@ -50,5 +50,4 @@ if ($result->num_rows > 0) {
     echo "No Search match with this tag";
 }
 ?>
-
-<a href="PostContentSuccess.php">Go back</a>
+ <a href="PostContentSuccess.php?value=<?php echo $_SESSION['uname'];?>"> Go back </a>
