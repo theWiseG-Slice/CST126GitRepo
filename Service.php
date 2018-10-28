@@ -31,6 +31,22 @@ class Service{
         else
             return false;
     }
+     
+    function checkAdminRole($username)
+    {
+        $connection = mysqli_connect($this->host, $this->username, $this->password, $this->database,8889);
+        $sql = "SELECT role FROM users WHERE username = '$username'";
+        $result = mysqli_query($connection, $sql);
+        if ($result) {
+            if ($result->num_rows==1)
+            {
+                $row = mysqli_fetch_assoc($result);
+                return $row['role'];
+            }
+
+        } else
+            return NULL;
+    }
     function register($uname,$pword,$firstname,$lastname,$email)
     {
         $connection = mysqli_connect($this->host, $this->username,$this->password,$this->database);
