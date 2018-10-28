@@ -31,7 +31,7 @@
             $_SESSION["uname"] = $_GET["value"];
         ?>
         <form action="SearchPostResult.php">
-            <input type="text" name="uname1" value="<?php if (isset($_SESSION)) {
+            <input type="hidden" name="uname1" value="<?php if (isset($_SESSION)) {
                 echo $_SESSION['uname'];
             } ?>">
             <input type="text" placeholder="Tag" name="tag">
