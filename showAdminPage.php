@@ -143,6 +143,67 @@ $result = mysqli_query($connection, "SELECT * FROM content");
         echo "<br/>";
         echo "<br/>";
     }
+    $result2 = mysqli_query($connection, "SELECT * FROM users");
+    ?>
+    <h2>List of username</h2>
+    <div class="container">
+        <?php
+    while ($row2 = mysqli_fetch_array($result2)) {
+        ?>
+
+                <div id="post">
+                    <tr>
+                        <?php
+                        echo "User name: " . $row2['username'];
+                        echo "<tr/>";
+                        echo "Password: " . $row2['pword'];
+                        echo "<tr/>";
+                        echo "Firstname: " . $row2['firstname'];
+                        echo "<tr/>";
+                        echo "Lastname: " . $row2['lastname'];
+                        echo "<tr/>";
+                        echo "Email: " . $row2['email'];
+                        echo "<tr/>";
+                        echo "Role: " . $row2['role'];
+                        echo "<tr/>";
+                        ?>
+                    </tr>
+                </div>
+        <?php
+        if($row2['role']!='admin') {
+            ?>
+            <div id="wrapper">
+                <tr>
+                    <form action="EditRole.php">
+                        <input type="hidden" name="username_editRole" value="<?php echo $row2['username']; ?>">
+                        <input type="hidden" name="uname_ses" value="<?php if (isset($_SESSION)) {
+                            echo $_SESSION['uname'];
+                        } ?>">
+                        <input type="submit" value="Edit Role">
+                    </form>
+
+                </tr>
+            </div>
+            <?php
+
+            ?>
+
+            <div id="wrapper">
+                <tr>
+                    <form action="DeleteUser.php">
+                        <input type="hidden" name="user_delete" value="<?php echo $row2['username']; ?>">
+                        <input type="hidden" name="uname_ses" value="<?php if (isset($_SESSION)) {
+                            echo $_SESSION['uname'];
+                        } ?>">
+                        <input type="submit" value="Delete">
+                    </form>
+                </tr>
+            </div>
+         <?php
+        }
+        echo "<br/>";
+        echo "<br/>";
+    }
     mysqli_close($connection);
     ?>
     <a href="Login.html"><h3>Login</h3></a>
