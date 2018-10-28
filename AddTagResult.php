@@ -17,7 +17,7 @@ if($username_ses == '')
     include ("Login.html");
 }
 else {
-    if($username_ses != $username_tag )
+    if($username_ses != $username_tag &&  ($user->checkAdminRole($username_ses)==NULL))
     {
         include ("AddTagError.html");
     }
