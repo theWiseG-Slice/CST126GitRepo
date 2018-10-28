@@ -19,7 +19,7 @@ if($username_ses == '')
     include ("DeleteError.html");
 }
 else {
-    if($username_ses != $username_del )
+    if($username_ses != $username_del $$  ($user->checkAdminRole($username_ses)==NULL))
     {
         include ("DeleteError.html");
     }
