@@ -26,8 +26,10 @@ if($username == '')
 }
 else {
     if ($user->insertPost($username, $title, $content) == true) {
-
-        include("PostContentSuccess.php");
+          if($user->checkAdminRole($username))
+                include("showAdminPage.php");
+          else
+               include("PostContentSuccess.php");
     } else {
 
         include("PostContentError.php");
