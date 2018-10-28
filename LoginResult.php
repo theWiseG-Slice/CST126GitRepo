@@ -16,7 +16,11 @@ $pword = $_GET['pword'];
 $_SESSION['uname'] = $uname;
 $user = new Service();
 if($user->login($uname, $pword)){
-    include("PostContentSuccess.php");
+     $_SESSION['role'] = $user->checkAdminRole($uname);
+    if($_SESSION['role']!=NULL )
+        include("showAdminPage.php");
+    else
+        include("PostContentSuccess.php");
 }
 else{
     include ("LoginError.php");
