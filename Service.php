@@ -34,7 +34,7 @@ class Service{
      
     function checkAdminRole($username)
     {
-        $connection = mysqli_connect($this->host, $this->username, $this->password, $this->database,8889);
+        $connection = mysqli_connect($this->host, $this->username, $this->password, $this->database);
         $sql = "SELECT role FROM users WHERE username = '$username'";
         $result = mysqli_query($connection, $sql);
         if ($result) {
