@@ -174,24 +174,24 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                     <tr>
                         <?php
                         echo "User name: " . $row2['username'];
-                        echo "<tr/>";
+                        echo "\t";
                         echo "Password: " . $row2['pword'];
-                        echo "<tr/>";
+                        echo "\t";
                         echo "Firstname: " . $row2['firstname'];
-                        echo "<tr/>";
+                        echo "\t";
                         echo "Lastname: " . $row2['lastname'];
-                        echo "<tr/>";
+                        echo "\t";
                         echo "Email: " . $row2['email'];
-                        echo "<tr/>";
+                        echo "\t";;
                         echo "Role: " . $row2['role'];
-                        echo "<tr/>";
+                        echo "\t";
                         ?>
                     </tr>
                 </div>
         <?php
         if($row2['role']!='admin') {
             ?>
-            <div id="wrapper">
+            
                 <tr>
                     <form action="EditRole.php">
                         <input type="hidden" name="username_editRole" value="<?php echo $row2['username']; ?>">
@@ -202,12 +202,12 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                     </form>
 
                 </tr>
-            </div>
+           
             <?php
 
             ?>
 
-            <div id="wrapper">
+            
                 <tr>
                     <form action="DeleteUser.php">
                         <input type="hidden" name="user_delete" value="<?php echo $row2['username']; ?>">
@@ -217,7 +217,7 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                         <input type="submit" value="Delete">
                     </form>
                 </tr>
-            </div>
+          
 
             <?php
         }
