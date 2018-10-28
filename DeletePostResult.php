@@ -25,8 +25,10 @@ else {
     }
     else {
         if ($user->deletePost($contentID) == true) {
-
-            include("PostContentSuccess.php");
+            if($user->checkAdminRole($username_ses))
+                include("showAdminPage.php");
+            else
+                include("PostContentSuccess.php");
         } else {
 
             include("DeleteError.html");
