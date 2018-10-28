@@ -31,7 +31,26 @@ class Service{
         else
             return false;
     }
-     
+    function editRole($username)
+    {
+        $role = 'admin';
+        $connection = mysqli_connect($this->host, $this->username, $this->password, $this->database,8889);
+        $sql = "UPDATE users SET role = '$role' WHERE username = '$username'";
+        if ($connection->query($sql) == true)
+            return true;
+        else
+            return false;
+
+    }
+    function deleteUser($username)
+    {
+        $connection = mysqli_connect($this->host, $this->username, $this->password, $this->database,8889);
+        $sql = "DELETE FROM users WHERE username = '$username'";
+        $result = mysqli_query($connection, $sql);
+        if($result) return true;
+        else return false;
+        
+    }
     function checkAdminRole($username)
     {
         $connection = mysqli_connect($this->host, $this->username, $this->password, $this->database);
