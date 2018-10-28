@@ -1,5 +1,5 @@
-
 <?php
+
 ?>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -16,19 +16,22 @@
 </head>
 <div id="wrapper">
     <div id="header">
-       
-            <h2>Taco's Blog Admin Page </h2>
-     
+        <div id="post">
+            <h2>Taco's Blog Admin Page</h2>
+
+        </div>
     </div>
 </div>
+
+<div id="wrapper">
     <div id="post">
         <h4>Search by Tag</h4>
         <?php
         if($_GET["value"]!=NULL)
             $_SESSION["uname"] = $_GET["value"];
-            ?>
+        ?>
         <form action="SearchPostResult.php">
-            <input type="hidden" name="uname1" value="<?php if (isset($_SESSION)) {
+            <input type="text" name="uname1" value="<?php if (isset($_SESSION)) {
                 echo $_SESSION['uname'];
             } ?>">
             <input type="text" placeholder="Tag" name="tag">
@@ -36,7 +39,15 @@
             "class="btn btn-success green"><i class="fa fa-share"></i>Search </button>
         </form>
     </div>
-    <h3>Add New Post</h3>
+</div>
+
+<div class="container">
+    <div class="row">
+        <h3>Add New Post</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
             <div class="widget-area no-padding blank">
                 <div class="status-upload">
                     <form action="PostContentResult.php">
@@ -51,7 +62,9 @@
                 </div>
 
             </div>
- 
+        </div>
+    </div>
+</div>
 </html>
 <?php
 $host = 'us-cdbr-iron-east-01.cleardb.net';
@@ -64,6 +77,7 @@ if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 $result = mysqli_query($connection, "SELECT * FROM content");
+
 ?>
 
 <div class="container">
@@ -73,7 +87,8 @@ $result = mysqli_query($connection, "SELECT * FROM content");
     <?php
     while ($row = mysqli_fetch_array($result)) {
         ?>
-        <div id="wrapper">           
+        <div id="wrapper">
+            <div id="header">
                 <div id="post">
                     <tr>
                         <?php
@@ -83,14 +98,16 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                         echo "<br/>";
                         echo $row['content']; //these are the fields that you have stored in your database table employee
                         echo "<br />";
+
                         ?>
                     </tr>
-                </div>           
-           
-        </div>
-         <?php
+                </div>
+            </div>
+            <?php
             echo "Tag: ";
             ?>
+        </div>
+        <div id="wrapper">
             <?php
             $contentID = $row['contentID'];
             $result3 = mysqli_query($connection, "SELECT tagID FROM tags_content WHERE contentID = $contentID ");
@@ -111,8 +128,8 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                 }
             }
             ?>
-      
-      
+        </div>
+        <div id="wrapper">
             <tr>
                 <form action="AddTagResult.php">
                     <input type="hidden" name="contentID_tag" value="<?php echo $row['contentID']; ?>">
@@ -138,11 +155,13 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                     <input type="submit" value="Delete">
                 </form>
             </tr>
-       
+        </div>
+
         <?php
         echo "<br/>";
         echo "<br/>";
     }
+
     $result2 = mysqli_query($connection, "SELECT * FROM users");
     ?>
     <h2>List of username</h2>
@@ -199,13 +218,16 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                     </form>
                 </tr>
             </div>
-         <?php
+
+            <?php
         }
         echo "<br/>";
         echo "<br/>";
     }
     mysqli_close($connection);
     ?>
+        </div>
     <a href="Login.html"><h3>Login</h3></a>
 </div>
+
 
