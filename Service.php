@@ -34,7 +34,7 @@ class Service{
     function editRole($username)
     {
         $role = 'admin';
-        $connection = mysqli_connect($this->host, $this->username, $this->password, $this->database,8889);
+        $connection = mysqli_connect($this->host, $this->username, $this->password, $this->database);
         $sql = "UPDATE users SET role = '$role' WHERE username = '$username'";
         if ($connection->query($sql) == true)
             return true;
@@ -44,7 +44,7 @@ class Service{
     }
     function deleteUser($username)
     {
-        $connection = mysqli_connect($this->host, $this->username, $this->password, $this->database,8889);
+        $connection = mysqli_connect($this->host, $this->username, $this->password, $this->database);
         $sql = "DELETE FROM users WHERE username = '$username'";
         $result = mysqli_query($connection, $sql);
         if($result) return true;
