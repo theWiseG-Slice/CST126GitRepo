@@ -23,8 +23,10 @@ else {
     }
     else {
         if ($user->addTag($contentID,$tagName) == true) {
-
-            include("PostContentSuccess.php");
+            if($user->checkAdminRole($username_ses))
+                include("showAdminPage.php");
+            else
+                include("PostContentSuccess.php");
         } else {
             include("Login.html");
         }
