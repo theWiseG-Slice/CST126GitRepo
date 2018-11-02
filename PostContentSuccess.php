@@ -128,6 +128,7 @@ $result = mysqli_query($connection, "SELECT * FROM content");
 
 
             </tr>
+
             <tr>
                 <form action="DeletePostResult.php">
                     <input type="hidden" name="contentID_del" value="<?php echo $row['contentID']; ?>">
@@ -137,10 +138,17 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                     <input type="hidden" name="uname_ses" value="<?php if (isset($_SESSION)) {
                         echo $_SESSION['uname'];
                     } ?>">
+        <?php
+
+        if($row['username'] == $_SESSION['uname']) {
+            ?>
                     <input type="submit" value="Delete">
+            <?php
+        }
+        ?>
                 </form>
             </tr>
-       
+
         <?php
         echo "<br/>";
         echo "<br/>";
