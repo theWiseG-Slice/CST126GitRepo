@@ -77,7 +77,7 @@ $result = mysqli_query($connection, "SELECT * from content ORDER BY postnumber D
         <a href="Login.html">
             Logout
         </a>
-        <a href="index.html">
+        <a href="Register.html">
             Register
         </a>
     </h3>
