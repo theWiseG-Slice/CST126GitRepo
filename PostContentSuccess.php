@@ -46,34 +46,25 @@
 					<div class="status-upload">
 						<form action="PostContentResult.php">
 							<input type="hidden" name="uname" value="<?php if (isset($_SESSION)) {echo $_SESSION['uname'];} ?>">
-							<input type="text" placeholder="Add Title" name="title">
-							<textarea placeholder="Add Content" name="content">
-							</textarea>
-							<button type="submit" class="btn btn-success green">
-								<i class="fa fa-share">
-								</i>
-								Add Post
-							</button>
+							<div>
+								<input type="text" placeholder="Add Title" name="title">
+							</div>
+							<div>
+								<textarea placeholder="Add Content" name="content">
+								</textarea>
+							</div>
+							<div>
+								<button type="submit" class="btn btn-success green">
+									<i class="fa fa-share">
+									</i>
+									Add Post
+								</button>
+							</div>
 						</form>
 					</div>
 				</div>
 		</section>
-   <!-- <h3>Add New Post</h3>
-            <div class="widget-area no-padding blank">
-                <div class="status-upload">
-                    <form action="PostContentResult.php">
-                        <input type="hidden" name="uname" value="<?php if (isset($_SESSION)) {
-                            echo $_SESSION['uname'];
-                        } ?>">
-                        <input type="text" placeholder="Add Title" name="title">
-                        <textarea placeholder="Add Content" name="content"></textarea>
-                        <button type="submit"
-                        "class="btn btn-success green"><i class="fa fa-share"></i>Add Post</button>
-                    </form>
-                </div>
-
-            </div>-->
- 
+	</body>
 </html>
 <?php
 $host = 'us-cdbr-iron-east-01.cleardb.net';
