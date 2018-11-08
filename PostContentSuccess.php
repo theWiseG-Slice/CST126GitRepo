@@ -40,8 +40,7 @@
 				</form>
 			</div>
 		</section>
-</div>
-    <div id="post">
+   <!-- <div id="post">
         <h4>Search by Tag</h4>
         <?php
         if($_GET["value"]!=NULL)
@@ -55,7 +54,7 @@
             <button type="submit"
             "class="btn btn-success green"><i class="fa fa-share"></i>Search </button>
         </form>
-    </div>
+    </div>-->
     <h3>Add New Post</h3>
             <div class="widget-area no-padding blank">
                 <div class="status-upload">
