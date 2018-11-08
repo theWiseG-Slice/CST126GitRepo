@@ -89,7 +89,8 @@ $result = mysqli_query($connection, "SELECT * FROM content");
 		<?php
     while ($row = mysqli_fetch_array($result)) {
         ?>
-        <div id="wrapper">           
+        <div id="wrapper">    
+			<div id="header">
                 <div id="post">
                     <tr>
                         <?php
@@ -103,7 +104,7 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                         ?>
                     </tr>
                 </div>           
-           
+			</div>
         </div>
 		<?php
             echo "Tag: ";
