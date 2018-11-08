@@ -108,7 +108,7 @@ $result = mysqli_query($connection, "SELECT * FROM content");
 		</div>
 		
 	</div>
-	}
+	}<?php
     mysqli_close($connection);
     ?>
 </section>
