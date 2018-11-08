@@ -106,29 +106,7 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                 </div>
             </div>
 		</div>
-		<?php
-            echo "Tag: ";
-            ?>
-            <?php
-            $contentID = $row['contentID'];
-            $result3 = mysqli_query($connection, "SELECT tagID FROM tags_content WHERE contentID = $contentID ");
-            $num_rows = mysqli_num_rows($result3);
-            if ($num_rows > 0) {
-                while ($row3 = mysqli_fetch_array($result3)) {
-                    $tagID = $row3['tagID'];
-                    $result2 = mysqli_query($connection, "SELECT tagName FROM tags WHERE tagID = $tagID ");
-                    if ($result2->num_rows > 0) {
-                        while ($row2 = $result2->fetch_assoc()) {
-                            ?>
-                            <?php
-                            echo "" . $row2['tagName'] . ",";
-                            ?>
-                            <?php
-                        }
-                    }
-                }
-            }
-            ?>
+		
 	</div>
 	}
     mysqli_close($connection);
