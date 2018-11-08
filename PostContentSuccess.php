@@ -1,25 +1,25 @@
 <?php
 
 ?>
-<!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
 <script>
     $(document).ready(function () {
         $("[data-toggle=tooltip]").tooltip();
     });
 </script>
-<html>
-<head>
-    <title>Taco's Blog</title>
-    <link type="text/css" rel="stylesheet" href="style.css"/>
-</head>
-<div id="wrapper">
-    <div id="header">
-       
-            <h2>Taco's Blog Page</h2>
-     
-    </div>
+<html lang ="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title> Taco Blog </title>
+		<link rel="stylesheet" href="post_content_success.css">
+	</head>
+	<body>
+		<div class="picture_one">
+			<h2 class = "ptitle">
+				Taco's Blog Page
+			</h2>
+		</div>
 </div>
     <div id="post">
         <h4>Search by Tag</h4>
