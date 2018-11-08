@@ -23,7 +23,7 @@
 		<section class ="section">
 			<div id="post">
 				<h4>
-					Search by Tag
+					Search by a Tag
 				</h4>
 				<?php
 			        if($_GET["value"]!=NULL)
