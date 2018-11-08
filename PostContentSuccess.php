@@ -85,34 +85,10 @@ $result = mysqli_query($connection, "SELECT * FROM content");
         	<h3>
 				Previous Posts
 			</h3>
-			<?php
-    			while ($row = mysqli_fetch_array($result)) {
-        	?>
 		</div>
-		<div id="wrapper">
-            <div id="header">
-                <div id="post">
-                      <b>
-                      	<?php echo "Title: ".$row['title'];?>
-                      </b>
-                      	<?php
-                      		echo "<br/>";
-                      		echo $row['content'];
-                      		echo "<br />";
-                      		echo "Post by: " . $row['username'];
-	                      	echo "<br />";
-                      		echo "Date: ".$row['datetime'];
-                      ?>
-                </div>
-            </div>
-		</div>
-		
 	</div>
-	}<?php
-    mysqli_close($connection);
-    ?>
 </section>
-<!--<div class="container">
+<div class="container">
     <div class="row">
         <h3>Previous Posts</h3>
     </div>
@@ -201,6 +177,4 @@ $result = mysqli_query($connection, "SELECT * FROM content");
     mysqli_close($connection);
     ?>
     <a href="Login.html"><h3>Login</h3></a>
-</div>-->
-
-
+</div>
