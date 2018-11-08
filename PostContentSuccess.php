@@ -40,22 +40,25 @@
 				</form>
 			</div>
 		</section>
-   <!-- <div id="post">
-        <h4>Search by Tag</h4>
-        <?php
-        if($_GET["value"]!=NULL)
-            $_SESSION["uname"] = $_GET["value"];
-            ?>
-        <form action="SearchPostResult.php">
-            <input type="hidden" name="uname1" value="<?php if (isset($_SESSION)) {
-                echo $_SESSION['uname'];
-            } ?>">
-            <input type="text" placeholder="Tag" name="tag">
-            <button type="submit"
-            "class="btn btn-success green"><i class="fa fa-share"></i>Search </button>
-        </form>
-    </div>-->
-    <h3>Add New Post</h3>
+		<section class="section">
+			<h3>Add New Post</h3>
+				<div class="widget-area no-padding blank">
+					<div class="status-upload">
+						<form action="PostContentResult.php">
+							<input type="hidden" name="uname" value="<?php if (isset($_SESSION)) {echo $_SESSION['uname'];} ?>">
+							<input type="text" placeholder="Add Title" name="title">
+							<textarea placeholder="Add Content" name="content">
+							</textarea>
+							<button type="submit" class="btn btn-success green">
+								<i class="fa fa-share">
+								</i>
+								Add Post
+							</button>
+						</form>
+					</div>
+				</div>
+		</section>
+   <!-- <h3>Add New Post</h3>
             <div class="widget-area no-padding blank">
                 <div class="status-upload">
                     <form action="PostContentResult.php">
@@ -69,7 +72,7 @@
                     </form>
                 </div>
 
-            </div>
+            </div>-->
  
 </html>
 <?php
