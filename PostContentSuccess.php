@@ -17,7 +17,7 @@
 	<body>
 		<div class="picture_one">
 			<h2 class = "ptitle">
-				Taco's Blog Page
+				Taco Blog Page
 			</h2>
 		</div>
 		<section class ="section">
@@ -50,7 +50,7 @@
 								<input type="text" placeholder="Add Title" name="title">
 							</div>
 							<div>
-								<textarea placeholder="Add Content" name="content">
+								<textarea placeholder="Add Content" name="content" style="width:90%;height:20%;">
 								</textarea>
 							</div>
 							<div>
