@@ -171,6 +171,20 @@ $result = mysqli_query($connection, "SELECT * FROM content");
     }
     mysqli_close($connection);
     ?>
-    <a href="Login.html"><h3>Login</h3></a>
 	</div>
+</section>
+<section class = "section">
+	<h3 class = "lightLink">
+		<a href="Login.html">
+			Login
+		</a>
+		<a href="index.html">
+			Register
+		</a>
+	</h3>
+</section>
+<section class="section">
+	<h2 style="font-size:10px;">
+		2018 © Big Taco Mind Control & Expensive Tacos Corporation |  All rights reserved.
+	</h2>
 </section>
