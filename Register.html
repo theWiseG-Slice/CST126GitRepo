@@ -1,0 +1,105 @@
+<!--
+Taco Blogs V 3.0
+Register Page V 2.0
+Programmers Roland, Kevin, Josh, Chuong
+9/7/2018
+Description:
+     Registration page that has all the text fields and buttons associated with it
+Resources: PHP and MySQL web Development, www.w3schools.com
+-->
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title> Taco Blog</title>
+		<link rel="stylesheet" href="stylefortacothetown.css">
+	</head>
+	<body>
+		<section class="section">
+			<h1>
+				Register for Taco Blog
+			</h1>
+		</section>
+		<section class = "section">
+			<form action="RegisterResult.php">
+			    <div class="container">
+			        <h1>
+						Sign Up
+					</h1>
+			        <p>
+						Please fill in this form to create an account.
+					</p>
+					<div class="container">
+						<label>
+							<b>
+								First Name
+							</b>
+						</label>
+					</div>
+			        <div class="container">
+				        <input type="text" placeholder="Enter first name" name="firstname" required>
+					</div>
+					<div class="container">
+						<label>
+							<b>
+								Last Name
+							</b>
+						</label>
+					</div>
+					<div class="container">
+				        <input type="text" placeholder="Enter last name" name="lastname" required>
+					</div>
+					<div class="container">
+						<label>
+							<b>
+								Email
+							</b>
+						</label>
+					</div>
+					<div class="container">
+				        <input type="text" placeholder="Enter Email" name="email" required>
+					</div>
+					<div class="container">
+						<label>
+							<b>
+								Username
+							</b>
+						</label>
+					</div>
+					<div class="container">
+						<input type="text" placeholder="Enter a username" name="uname" required>
+					</div>
+					<div class="container">
+						<label>
+							<b>
+								Password
+							</b>
+						</label>
+					</div>
+					<div class="container">
+				        <input type="password" placeholder="Enter your password" name="pword" required>
+					</div>
+
+		        <div class="clearfix">
+            <button type="submit" style="button">
+				Join Us!
+			</button>
+			<p class="lightLink">
+				Already a Member? 
+				<a href="Login.html">
+					Click Here to Login.
+				</a>
+			</p>
+        </div>
+    </div>
+</form>
+		</section>
+		<section class="section">
+			<h2 style="font-size:10px;">
+				2018 © Big Taco Mind Control & Expensive Tacos Corporation |  All rights reserved.
+			</h2>
+		</section>
+	</body>
+</html>
