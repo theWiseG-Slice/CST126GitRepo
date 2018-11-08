@@ -6,6 +6,10 @@ Resources:
 
 
 TODO:
-    In the PostContentSuccess we can use php to check if current user is = to user post then display delete button, otherwise don't display it at all
+    edit posts for admin or the user
     we should put the see post button on the register page as well
-    A home page that automatically displays all the posts might be good as well
+
+    Roland
+        A home page that automatically displays all the posts
+        change the links for the registration page to match
+        home page is index.html
