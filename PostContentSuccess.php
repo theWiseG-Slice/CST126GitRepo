@@ -86,13 +86,7 @@ $result = mysqli_query($connection, "SELECT * FROM content");
 				Previous Posts
 			</h3>
 		</div>
-	</div>
-</section>
-<div class="container">
-    <div class="row">
-        <h3>Previous Posts</h3>
-    </div>
-    <?php
+		<?php
     while ($row = mysqli_fetch_array($result)) {
         ?>
         <div id="wrapper">           
@@ -111,7 +105,7 @@ $result = mysqli_query($connection, "SELECT * FROM content");
                 </div>           
            
         </div>
-         <?php
+		<?php
             echo "Tag: ";
             ?>
             <?php
@@ -177,4 +171,5 @@ $result = mysqli_query($connection, "SELECT * FROM content");
     mysqli_close($connection);
     ?>
     <a href="Login.html"><h3>Login</h3></a>
-</div>
+	</div>
+</section>
