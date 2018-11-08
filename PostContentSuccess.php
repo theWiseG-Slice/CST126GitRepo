@@ -176,7 +176,7 @@ $result = mysqli_query($connection, "SELECT * FROM content");
 <section class = "section">
 	<h3 class = "lightLink">
 		<a href="Login.html">
-			Login
+			Logout
 		</a>
 		<a href="index.html">
 			Register
