@@ -79,8 +79,62 @@ if (mysqli_connect_errno()) {
 $result = mysqli_query($connection, "SELECT * FROM content");
 
 ?>
-
-<div class="container">
+<section class="section">
+	<div clas="container">
+		<div class="row">
+        	<h3>
+				Previous Posts
+			</h3>
+			<?php
+    			while ($row = mysqli_fetch_array($result)) {
+        	?>
+		</div>
+		<div id="wrapper">
+            <div id="header">
+                <div id="post">
+                      <b>
+                      	<?php echo "Title: ".$row['title'];?>
+                      </b>
+                      	<?php
+                      		echo "<br/>";
+                      		echo $row['content'];
+                      		echo "<br />";
+                      		echo "Post by: " . $row['username'];
+	                      	echo "<br />";
+                      		echo "Date: ".$row['datetime'];
+                      ?>
+                </div>
+            </div>
+		</div>
+		<?php
+            echo "Tag: ";
+            ?>
+            <?php
+            $contentID = $row['contentID'];
+            $result3 = mysqli_query($connection, "SELECT tagID FROM tags_content WHERE contentID = $contentID ");
+            $num_rows = mysqli_num_rows($result3);
+            if ($num_rows > 0) {
+                while ($row3 = mysqli_fetch_array($result3)) {
+                    $tagID = $row3['tagID'];
+                    $result2 = mysqli_query($connection, "SELECT tagName FROM tags WHERE tagID = $tagID ");
+                    if ($result2->num_rows > 0) {
+                        while ($row2 = $result2->fetch_assoc()) {
+                            ?>
+                            <?php
+                            echo "" . $row2['tagName'] . ",";
+                            ?>
+                            <?php
+                        }
+                    }
+                }
+            }
+            ?>
+	</div>
+	}
+    mysqli_close($connection);
+    ?>
+</section>
+<!--<div class="container">
     <div class="row">
         <h3>Previous Posts</h3>
     </div>
@@ -169,6 +223,6 @@ $result = mysqli_query($connection, "SELECT * FROM content");
     mysqli_close($connection);
     ?>
     <a href="Login.html"><h3>Login</h3></a>
-</div>
+</div>-->
 
 
