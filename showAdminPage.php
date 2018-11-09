@@ -20,24 +20,26 @@
 				Taco Admin Page
 			</h2>
 		</div>
-
-<div id="wrapper">
-    <div id="post">
-        <h4>Search by Tag</h4>
-        <?php
-        if($_GET["value"]!=NULL)
-            $_SESSION["uname"] = $_GET["value"];
-        ?>
-        <form action="SearchPostResult.php">
-            <input type="hidden" name="uname1" value="<?php if (isset($_SESSION)) {
-                echo $_SESSION['uname'];
-            } ?>">
-            <input type="text" placeholder="Tag" name="tag">
-            <button type="submit"
-            "class="btn btn-success green"><i class="fa fa-share"></i>Search </button>
-        </form>
-    </div>
-</div>
+<section class ="section">
+			<div id="post">
+				<h4>
+					Search by a Tag
+				</h4>
+				<?php
+			        if($_GET["value"]!=NULL)
+					$_SESSION["uname"] = $_GET["value"];
+				?>
+        		<form action="SearchPostResult.php">
+					<input type="hidden" name="uname1" value="<?php if (isset($_SESSION)) {echo $_SESSION['uname'];} ?>">
+					<input type="text" placeholder="Tag" name="tag">
+					<button type="submit" class="btn btn-success green">
+						<i class="fa fa-share">
+							Search
+						</i>
+					</button>
+				</form>
+			</div>
+		</section>
 
 <div class="container">
     <div class="row">
