@@ -1,0 +1,8 @@
+<?php
+
+function truncate($str)
+{	if(strlen($str)>0)
+	{
+		
+	}
+}
